@@ -1,6 +1,6 @@
 [package]
 name = "kakoune-discord"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["ABuffSeagull <reecevanatta@gmail.com>"]
 edition = "2018"
 
