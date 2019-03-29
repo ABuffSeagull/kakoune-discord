@@ -10,7 +10,7 @@ hook global KakBegin .* %{
 }
 
 hook global WinDisplay .* %{
-	nop %sh{ echo $kak_reg_percent > "$kak_opt_discord_fifo" }
+	nop %sh{ { echo $kak_reg_percent > "$kak_opt_discord_fifo"; } &> /dev/null < /dev/null & }
 }
 
 hook global KakEnd .* %{
