@@ -35,6 +35,7 @@ fn main() {
             .set_activity(|act| {
                 act.details(format!("Editing {}", info.replace("'", "")))
                     .timestamps(|timestamp| timestamp.start(epoc_secs))
+                    .assets(|ass| ass.large_image("default"))
             })
             .expect("Failed to set activity");
     }
