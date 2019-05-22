@@ -8,7 +8,9 @@ Now you can show off to all your friends how ~~hipster~~cool your editor is :smi
 
 You should *really* use [plug.kak](https://github.com/andreyorst/plug.kak):
 ```
-plug "abuffseagull/kakoune-discord" do %{ cargo install --path . --force }
+plug "abuffseagull/kakoune-discord" do %{ cargo install --path . --force } %{
+  discord-presence-enable
+}
 ```
 And that's it!
 
